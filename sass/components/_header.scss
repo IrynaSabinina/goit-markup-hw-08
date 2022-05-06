@@ -1,0 +1,151 @@
+header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header {
+  display: flex;
+  background-color: var(--bj-color);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__logo {
+  text-decoration: none;
+}
+
+.logo__web {
+  font-family: var(--basic-fort-relway);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+
+.logo__studio {
+  font-family: var(--basic-fort-relway);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.link,
+.mail,
+.tell {
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+}
+
+.accent {
+  color: var(--accent-color);
+}
+
+.nav__list__link {
+  display: flex;
+  position: relative;
+  align-items: baseline;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+  &:hover {
+    color: var(--accent-color);
+    .nav__list__icon__mail {
+      fill: var(--accent-color);
+    }
+    .nav__list__icon__phone {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.nav__list__link .accent {
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+  }
+}
+
+.nav__list__link .link {
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
+.mail,
+.tell {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  margin-left: 93px;
+}
+
+.nav__list__icon__mail {
+  width: 16px;
+  height: 12px;
+  fill: var(--social-icon);
+  padding: 0;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+}
+
+.nav__list__icon__phone {
+  width: 10px;
+  height: 16px;
+  fill: var(--social-icon);
+  padding: 0;
+  margin-right: 10px;
+  align-items: center;
+  justify-content: center;
+  transition-property: fill;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+}
+
+.nav__list .link {
+  display: block;
+  align-items: center;
+  justify-content: baseline;
+}
+
+.header__registration {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav__list__link .mail {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.nav__list__link .tell {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}

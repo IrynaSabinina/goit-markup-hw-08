@@ -1,0 +1,208 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  min-width: 528px;
+  min-height: 581px;
+  padding: 40px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background: var(--bj-color);
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button__close {
+  position: fixed;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0);
+  transition-property: fill;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+}
+
+.button__close:hover,
+.button__close:focus {
+  fill: var(--accent-color);
+  cursor: pointer;
+}
+
+.close__btn__svg {
+  position: absolute;
+  top: -17%;
+  left: -20%;
+  width: 18px;
+  height: 18px;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.modal__form {
+  margin-top: 12px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.modal__input {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition-property: border-color fill;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+  outline: none;
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+    .modal__icon {
+      fill: var(--accent-color);
+    }
+  }
+}
+
+.modal__label__text {
+  margin-bottom: 4px;
+}
+
+.modal__label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal__icon {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  bottom: 14px;
+  left: 15px;
+  fill: var(--title-text-color);
+  transition-property: fill;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+}
+
+.modal__input:hover + .modal__icon {
+  fill: var(--accent-color);
+}
+.modal__input:focus + .modal__icon {
+  fill: var(--accent-color);
+}
+
+.textarea {
+  padding: 12px;
+  padding-left: 16px;
+  padding-bottom: 12px;
+  padding-right: 16px;
+  min-height: 120px;
+  resize: none;
+  outline: none;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.33;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.modal__text {
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+.checkbox__label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+.check__input:checked + .check {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.agreement__text,
+.agreement__link {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.agreement__text {
+  padding-right: 5px;
+}
+
+.registration__btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 52px;
+  border: none;
+  padding: 10px;
+  background-color: var(--accent-color);
+  text-align: center;
+  color: var(--bj-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition-property: background-color, cursor;
+  transition-duration: var(--time-transformatiom);
+  transition-timing-function: var(--time-function);
+  margin-top: 30px;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    cursor: pointer;
+  }
+}

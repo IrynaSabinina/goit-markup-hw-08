@@ -1,0 +1,18 @@
+@import "./utils/variables";
+@import "./utils/hidden.scss";
+
+@import "./base/base";
+@import "./base/reset";
+
+// components//
+@import "./components/header";
+@import "./components/footer";
+
+@import "./components/hero";
+@import "./components/modal";
+@import "./components/specifics";
+@import "./components/works";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/nav-btn";
+@import "./components/projects";
