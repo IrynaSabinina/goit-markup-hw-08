@@ -1,6 +1,4 @@
 .hero {
-  padding-top: 200px;
-  padding-bottom: 210px;
   max-width: 1600px;
   max-height: 600px;
   margin-left: auto;
@@ -10,20 +8,40 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/bg-team.jpg);
+    url(../images/fon-hero/bg-team.jpg);
   background-color: var(--bj-hero);
   background-size: cover;
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 480px) {
+    background-image: url(../../images/mob/Header480.jpg);
+    background-size: cover;
+    height: 400px;
+    padding-top: 118px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 210px;
+  }
 }
 
 .hero__title {
   text-align: center;
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--bj-color);
+
+  @media screen and (max-width: 480px) {
+    font-size: 26px;
+    line-height: 1.6;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+  }
 }
 
 .hero__button {

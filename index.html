@@ -38,33 +38,56 @@
               <a href="" class="link">Контакты</a>
             </li>
           </ul>
+          <ul class="header__registration list">
+            <li class="nav__list__link">
+              <a href="mailto:info@devstudio.com" class="mail">
+                <svg class="nav__list__icon__mail">
+                  <use
+                    href="./images/icons.svg#icon-envelope-hover"
+                    width="16"
+                    height="12"
+                  ></use>
+                </svg>
+                info@devstudio.com</a
+              >
+            </li>
+            <li class="nav__list__link">
+              <a href="tell:+380961111111" class="tell">
+                <svg class="nav__list__icon__phone">
+                  <use
+                    href="./images/icons.svg#icon-smartphone-1"
+                    width="10"
+                    height="16"
+                  ></use>
+                </svg>
+                +38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+          <button type="button" class="burger-menu is-open" data-menu-button>
+            <svg
+              width="40px"
+              height="40px"
+              aria-label="Переключатель мобильного меню"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <use
+                class="icon-close"
+                href="./images/icons.svg#icon-close_24px"
+              ></use>
+              <use
+                class="icon-menu"
+                href="./images/icons.svg#icon-menu_24px"
+              ></use>
+            </svg>
+          </button>
+          <div class="mobile-menu" id="mobile-menu" data-menu>
+            <ul class="mobile-menu__nav"></ul>
+            <ul class="mobile-menu__contacts"></ul>
+            <ul class="mobile-menu__socials"></ul>
+          </div>
         </nav>
-        <ul class="header__registration list">
-          <li class="nav__list__link">
-            <a href="mailto:info@devstudio.com" class="mail">
-              <svg class="nav__list__icon__mail">
-                <use
-                  href="./images/icons.svg#icon-envelope-hover"
-                  width="16"
-                  height="12"
-                ></use>
-              </svg>
-              info@devstudio.com</a
-            >
-          </li>
-          <li class="nav__list__link">
-            <a href="tell:+380961111111" class="tell">
-              <svg class="nav__list__icon__phone">
-                <use
-                  href="./images/icons.svg#icon-smartphone-1"
-                  width="10"
-                  height="16"
-                ></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
       </div>
     </header>
 
@@ -166,7 +189,11 @@
 
           <ul class="team__list list">
             <li class="team__list__person-card">
-              <img src="./images/demianenko.jpg" alt="portrait" width="270" />
+              <img
+                src="./images/person-photo/demianenko.jpg"
+                alt="portrait"
+                width="270"
+              />
               <div class="team__list__person-card__text">
                 <h3 class="team__list__person-card__text__name">
                   Игорь Демьяненко
@@ -223,7 +250,11 @@
               </div>
             </li>
             <li class="team__list__person-card">
-              <img src="./images/repina.jpg" alt="portrait" width="270" />
+              <img
+                src="./images/person-photo/repina.jpg"
+                alt="portrait"
+                width="270"
+              />
               <div class="team__list__person-card__text">
                 <h3 class="team__list__person-card__text__name">
                   Ольга Репина
@@ -280,7 +311,11 @@
               </div>
             </li>
             <li class="team__list__person-card">
-              <img src="./images/tarasov.jpg" alt="portrait" width="270" />
+              <img
+                src="./images/person-photo/tarasov.jpg"
+                alt="portrait"
+                width="270"
+              />
               <div class="team__list__person-card__text">
                 <h3 class="team__list__person-card__text__name">
                   Николай Тарасов
@@ -337,7 +372,11 @@
               </div>
             </li>
             <li class="team__list__person-card">
-              <img src="./images/ermakov.jpg" alt="portrait" width="270" />
+              <img
+                src="./images/person-photo/ermakov.jpg"
+                alt="portrait"
+                width="270"
+              />
               <div class="team__list__person-card__text">
                 <h3 class="team__list__person-card__text__name">
                   Михаил Ермаков
@@ -618,5 +657,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,9 @@
 .works {
   padding-bottom: 94px;
+  @media screen and (max-width: 480px) {
+    display: none;
+    margin: 0;
+  }
 }
 
 .works__title {
@@ -25,6 +29,9 @@
   &:not(:first-child) {
     margin-left: 30px;
   }
+  @media screen and (max-width: 480px) {
+    text-align: center;
+  }
 }
 
 .works__item__about {
@@ -47,4 +54,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--bj-color);
+  @media screen and (max-width: 480px) {
+    max-width: 370px;
+  }
 }
